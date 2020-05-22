@@ -3,32 +3,32 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Построение математической модели и формулировка задачи оптимального управления}\label{2sec:problem-formulation}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-Неоклассическая модель оптимального экономического ростаописывает замкнутую агрегированную экономику, производящую в каждый момент времении $t \geq 0$  единственныйоднородный продукт (капитал)со скоростью $Y(t) > 0$ В каждыймомент времени $t$ величина $Y(t)$ является функцией текущих значений капитала $K(t) > 0$ и трудовых ресурсов $L(t) > 0$; трудовые ресурсы также предполагаются однородными. Таким образом,
+Неоклассическая модель оптимального экономического роста [5] описывает замкнутую агрегированную экономику, производящую в каждый момент времении $t \geq 0$  единственныйоднородный продукт (капитал)со скоростью $Y(t) > 0$ В каждыймомент времени $t$ величина $Y(t)$ является функцией текущих значений капитала $K(t) > 0$ и трудовых ресурсов $L(t) > 0$; трудовые ресурсы также предполагаются однородными. Таким образом,
 
 \begin{equation}\label{2.1}
-  Y (t)=F(K(t),L(t)) \text{ для любого } t \geq 0
+  Y (t)=F(K(t),L(t)) \text{ для любого } t \geq 0.
 \end{equation}
 
 Функция $F$ обычно называется производственной функцией. Относительно производственной функции $F$ предполагается, что она определена и непрерывна на положительном квадранте
-$$G=\{ (K,L)\in \mathbb{R}^2 \colon K>0,L>0\}$$,
+$$G=\{ (K,L)\in \mathbb{R}^2 \colon K>0,L>0\},$$
 дважды непрерывно дифференцируема и удовлетворяет следующим “неоклассическим” условиям для всех $K>0$, $L>0$:
 
 \begin{equation}\label{2.2}
-  \frac{\partial F(K,L)}{\partial K}>0, \hspace{1cm} \frac{\partial^2 F(K,L)}{\partial K^2}<0
+  \frac{\partial F(K,L)}{\partial K}>0, \hspace{1cm} \frac{\partial^2 F(K,L)}{\partial K^2}<0,
 \end{equation}
 \begin{equation}\label{2.3}
-  \frac{\partial F(K,L)}{\partial L}>0, \hspace{1cm} \frac{\partial^2 F(K,L)}{\partial L^2}<0
+  \frac{\partial F(K,L)}{\partial L}>0, \hspace{1cm} \frac{\partial^2 F(K,L)}{\partial L^2}<0,
 \end{equation}
 \begin{equation}\label{2.4}
-  \lim\limits_{K \to +0} \frac{\partial F(K,L)}{\partial K}=\infty \hspace{1cm} \lim\limits_{K \to \infty} \frac{\partial F(K,L)}{\partial K}=0
+  \lim\limits_{K \to +0} \frac{\partial F(K,L)}{\partial K}=\infty, \hspace{1cm} \lim\limits_{K \to \infty} \frac{\partial F(K,L)}{\partial K}=0,
 \end{equation}
 \begin{equation}\label{2.5}
-  \lim\limits_{K \to +0} \frac{\partial F(K,L)}{\partial L}=\infty \hspace{1cm} \lim\limits_{K \to \infty} \frac{\partial F(K,L)}{\partial L}=0
+  \lim\limits_{K \to +0} \frac{\partial F(K,L)}{\partial L}=\infty, \hspace{1cm} \lim\limits_{K \to \infty} \frac{\partial F(K,L)}{\partial L}=0.
 \end{equation}
 
 Наконец, предполагается, что $F$ положительно однородна первой степени, т.е.
 \begin{equation}\label{2.6}
-  F(\lambda K, \lambda L)= \lambda F(K,L)\text{ для любых } \lambda>0, K>0, L>0
+  F(\lambda K, \lambda L)= \lambda F(K,L)\text{ для любых } \lambda>0, K>0, L>0.
 \end{equation}
 
 Последнее условие означает, что объем производства в каждую единицу времени прямо пропорционален величинам имеющихся вэту единицу времени производственных факторов. В качестве производственной функции $F$ может фигурировать, например, стандартная функция Кобба–Дугласа вида
@@ -54,7 +54,7 @@ $$G=\{ (K,L)\in \mathbb{R}^2 \colon K>0,L>0\}$$,
 В данной модели амортизации капитала не предполагается. Поэтому в силу равенства (\ref{2.7}) динамика изменения капитала может быть описана при помощи следующего дифференциального уравнения:
 
 \begin{equation}\label{2.9}
-  \dot K(t)=I(t)=u(t)Y(t)
+  \dot K(t)=I(t)=u(t)Y(t).
 \end{equation}
 
 Считаем, что в начальный момент времени $K(0)=K_0>0$.
@@ -62,7 +62,7 @@ $$G=\{ (K,L)\in \mathbb{R}^2 \colon K>0,L>0\}$$,
 Пусть трудовые ресурсы удовлетворяют условию экспоненциального роста, т.е.
 
 \begin{equation}\label{2.10}
-  \dot L(t)=\mu L(t)
+  \dot L(t)=\mu L(t),
 \end{equation}
 где $\mu>0$ ---  некоторая постоянная. Аналогично будем считать, что $L(0)=L_0>0$.
 
@@ -82,7 +82,7 @@ $\dot K(t)=u(t)F(K(t),L(t)), u(t)\in U_{\epsilon}=[0, 1-\epsilon ],$
 $K(0)=K_0, L(0)=L_0,$
 \end{center}
 \begin{equation}\label{2.11}
-  J(K,L,u)=\int_{0}^{\infty}e^{-pt} [\ln(1-u(t))+lnF(K(t),L(t)) ]dt \to \max
+  J(K,L,u)=\int_{0}^{\infty}e^{-pt} [\ln(1-u(t))+lnF(K(t),L(t)) ]dt \to \max.
 \end{equation}
 
 Задача $(P_{\epsilon})$ является частным случаем задачи $(P)$. При исследовании неоклассической задачи оптимального экономического роста обычно, используя условие однородности (\ref{2.6}), понижают размерность системы и переходят к вспомогательной фазовой переменной $x = K$/$L$ (величине капитала, приходящегося на единицу рабочей силы) и однофакторной производственной функции $f$ вида $f(x)=F(x,1), x>0$. В этом случае в силу условий (\ref{2.1}) и (\ref{2.6}) для любого $t \ge 0$
@@ -95,7 +95,7 @@ $K(0)=K_0, L(0)=L_0,$
 \end{equation}
 и вследствие (\ref{2.2})–(\ref{2.6})
 \begin{equation}\label{2.13}
-  \lim_{x \to +0}f(x)=0, \lim_{x \to \infty}f(x)=\infty, \lim_{x \to +0} \frac{d}{dx}f(x)=\infty, \lim_{x \to \infty} \frac{d}{dx}f(x)=0
+  \lim_{x \to +0}f(x)=0, \lim_{x \to \infty}f(x)=\infty, \lim_{x \to +0} \frac{d}{dx}f(x)=\infty, \lim_{x \to \infty} \frac{d}{dx}f(x)=0.
 \end{equation}
 
 Для переменной x(t)=K(t)/L(t) в силу равенств (\ref{2.9}) и (\ref{2.10}) имеем
@@ -104,7 +104,7 @@ $K(0)=K_0, L(0)=L_0,$
 
 откуда в силу определения переменной x и условий (\ref{2.1}) и (\ref{2.6}) вытекает равенство
 
-  $$\dot x(t)=u(t)f(x(t)-\mu x(t))$$.
+  $$\dot x(t)=u(t)f(x(t)-\mu x(t)).$$
 
 
 Величина мгновенного потребления на единицу трудовых ресурсов в момент времени $t \ge 0$ есть c(t)=C(t)/L(t). Согласно (\ref{2.1}) и (\ref{2.8}) получаем
@@ -139,7 +139,7 @@ $K(0)=K_0, L(0)=L_0,$
   K(0)=K_0, L(0)=L_0,
 \end{equation}
 \begin{equation}\label{2.17}
-  J(K,L,u)=\int_{0}^{\infty}e^{-pt} [\ln(1-u(t))+lnF(K(t),L(t)) ]dt \to \max
+  J(K,L,u)=\int_{0}^{\infty}e^{-pt} [\ln(1-u(t))+lnF(K(t),L(t)) ]dt \to \max.
 \end{equation}
 
 
@@ -177,18 +177,18 @@ $$\dot \psi^2(t)=-u_*(t)\frac{\partial F(K_*(t), L_*(t))}{\partial L} \psi^1(t)-
 
   \item для любого $t \ge 0$ имеем
   \begin{equation}\label{2.21}
-    \psi^1(t)>0, \psi^2(t)>0
+    \psi^1(t)>0, \psi^2(t)>0;
   \end{equation}
 
-  \item если существует такое число $\theta>0$, что начиная с некоторого момента времени $\tau ge 0$ выполняется неравенство
+  \item если существует такое число $\theta>0$, что начиная с некоторого момента времени $\tau \ge 0$ выполняется неравенство
 
       \begin{equation}\label{2.22}
-        u_*(t)\ge \theta
+        u_*(t)\ge \theta,
       \end{equation}
       то выполняется условие трансверсальности
 
       \begin{equation}\label{2.23}
-        \lim_{t\to \infty}\psi^1(t)K_*(t)=0
+        \lim_{t\to \infty}\psi^1(t)K_*(t)=0.
       \end{equation}
 
       Здесь
@@ -203,13 +203,13 @@ $$\dot \psi^2(t)=-u_*(t)\frac{\partial F(K_*(t), L_*(t))}{\partial L} \psi^1(t)-
 Перейдя в задаче $(P_{\epsilon})$ к фазовой переменной  $x(t)=K(t)$/$L(t)$, $t\ge 0$, получим следующую эквивалентную ей задачу $(\tilde P_{\epsilon}), 0<\epsilon<1$ (см. предыдущий пункт):
 
 \begin{equation}\label{2.24}
-  \dot x(t)=u(t)f(x(t))-\mu x(t), u(t) \in U_{\epsilon}=[0,1-\epsilon]
+  \dot x(t)=u(t)f(x(t))-\mu x(t), u(t) \in U_{\epsilon}=[0,1-\epsilon],
 \end{equation}
 \begin{equation}\label{2.25}
 x(0)=x_0
 \end{equation}
 \begin{equation}\label{2.26}
-J(x,u)=\int_{0}^{\infty}e^{-pt}[ \ln (1-u(t))+\ln f(x(t)) ]dt \to \max
+J(x,u)=\int_{0}^{\infty}e^{-pt}[ \ln (1-u(t))+\ln f(x(t)) ]dt \to \max.
 \end{equation}
 
 Здесь $x_0 \in \tilde{G}=(0,\infty)$ и $f(x)=F(x,1)$ для любого $x\in \tilde{G}$
@@ -221,25 +221,25 @@ J(x,u)=\int_{0}^{\infty}e^{-pt}[ \ln (1-u(t))+\ln f(x(t)) ]dt \to \max
   \item  оптимальная пара $(x_*,u_*)$ вместе с текущей сопряженной переменной p удовлетворяют на бесконечном полуинтервале времени $[0,\infty)$ основным соотношениям принципа максимума Понтрягина в нормальной форме:
 
       \begin{equation}\label{2.27}
-        \dot p(t)=[p+\mu-u_*(t)\frac{d}{dx}f(x_*(t))]p-\frac{1}{f(x_*(t))} \frac{d}{dx}f(x_*(t))
+        \dot p(t)=[p+\mu-u_*(t)\frac{d}{dx}f(x_*(t))]p-\frac{1}{f(x_*(t))} \frac{d}{dx}f(x_*(t)),
       \end{equation}
 
       \begin{equation}\label{2.28}
-        \mathcal{M}(x_*(t),u_*(t),p(t)) = M(x_*(t),p(t))
+        \mathcal{M}(x_*(t),u_*(t),p(t)) = M(x_*(t),p(t)).
       \end{equation}
 
   \item для любого $t \ge 0$ имеем
   \begin{equation}\label{2.29}
-    p(t)>0
+    p(t)>0;
   \end{equation}
 
   \item если существует такое число $\theta>0$, что начиная с некоторого момента времени $\tau > 0 $ выполняется неравенство
       \begin{equation}\label{2.30}
-        u_*(t)\ge \theta
+        u_*(t)\ge \theta,
       \end{equation}
       то выполняется условие трансверсальности
       \begin{equation}\label{2.31}
-        \lim_{t\to \infty} e^{\rho t}p(t)x_*(t)=0
+        \lim_{t\to \infty} e^{\rho t}p(t)x_*(t)=0.
       \end{equation}
 
       Здесь текущие функция Гамильтона–Понтрягина $\mathcal{M}$ и гамильтониан $M$ для задачи $(\tilde{P_{\epsilon}})$ в нормальной форме определяются стандартным образом:
@@ -262,7 +262,7 @@ J(x,u)=\int_{0}^{\infty}e^{-pt}[ \ln (1-u(t))+\ln f(x(t)) ]dt \to \max
 
 Пусть, кроме того, существует такая точка $\xi \in \tilde G$, что
 \begin{equation}\label{2.34}
-  \phi_1(\xi)=\phi_2(\xi)
+  \phi_1(\xi)=\phi_2(\xi).
 \end{equation}
 
 Тогда функции $\eta_1, \eta_2\colon \tilde G\mapsto \mathbb R^1$, определённые равенствами
@@ -276,7 +276,7 @@ J(x,u)=\int_{0}^{\infty}e^{-pt}[ \ln (1-u(t))+\ln f(x(t)) ]dt \to \max
           \eta_2(x)=
           \begin{cases}
             \phi_2(x), & \text{если $x\le\xi$,} \\
-            \phi_1(x), & \text{если $x>\xi$,}
+            \phi_1(x), & \text{если $x>\xi$}
           \end{cases}
 \end{equation}
 являются вогнутыми.
@@ -296,14 +296,14 @@ J(x,u)=\int_{0}^{\infty}e^{-pt}[ \ln (1-u(t))+\ln f(x(t)) ]dt \to \max
 \begin{equation}\label{2.36}
   u(x,p)=
   \begin{cases}
-    0, & \text{если $0<p<\frac{1}{f(x)}$} \\
-    1-\frac{1}{f(x)p}, & \text{если $\frac{1}{f(x)}\le p\le\frac{1}{\epsilon f(x)}$} \\
-    1-\epsilon, & \text{если $p>\frac{1}{\epsilon f(x)}$}.
+    0, & \text{если $0<p<\frac{1}{f(x)},$} \\
+    1-\frac{1}{f(x)p}, & \text{если $\frac{1}{f(x)}\le p\le\frac{1}{\epsilon f(x)},$} \\
+    1-\epsilon, & \text{если $p>\frac{1}{\epsilon f(x)}.$}
   \end{cases}
 \end{equation}
 и всюду в множестве $\Gamma$ имеем
 \begin{center}
-  $M(x,p)=(u(x,p)f(x)-\mu x)p + \ln(1-u(x,p))+\ln f(x)$
+  $M(x,p)=(u(x,p)f(x)-\mu x)p + \ln(1-u(x,p))+\ln f(x).$
 \end{center}
 
 Определим множества $\Gamma_1, \Gamma_2, \Gamma_3$:
@@ -314,7 +314,7 @@ J(x,u)=\int_{0}^{\infty}e^{-pt}[ \ln (1-u(t))+\ln f(x(t)) ]dt \to \max
 
     $\Gamma_3=\{(x,p)\in\Gamma\colon p>\frac{1}{\epsilon f(x)}\}$.
 \end{center}
-$\Gamma=\Gamma_1 \bigcup \Gamma_2 \bigcup \Gamma_3$
+$\Gamma=\Gamma_1 \bigcup \Gamma_2 \bigcup \Gamma_3.$
 
 \includegraphics{pic}
 
@@ -355,19 +355,19 @@ $\Gamma=\Gamma_1 \bigcup \Gamma_2 \bigcup \Gamma_3$
 
 $ x_*(t) = x_{*}^{1}, x_{*}^{2}, ... , x_{*}^{m} $ - множество оптимальных траекторий. Рост экономики ограничен наиболее сдерживающим темпом,  который определяется показателем
 \begin{center}
-	$ \bar{x} = \underset{i = 1,m}{\min} x_{*}^{i} $
+	$ \bar{x} = \underset{i = 1,m}{\min} x_{*}^{i}. $
 \end{center}
 Показатель $ \bar{x} $
 является условно минимальным темпом роста производства. Условность состоит в том, что из множества Z применяется одна из существующих групп технологий $ Z^r \in Z, r = 1, 2, …, s. $ Значение показателя $ \bar{x} $ может быть увеличено применением других групп технологий из множества $ z $. Тогда оптимизация выполняется по Парето. Критерием оптимизации становится достижение равенства
 \begin{center}
-	$ x* = \underset{r=1,s}{\max} \underset{i=1,m}{\min} x_{*}^{i} $
+	$ x* = \underset{r=1,s}{\max} \underset{i=1,m}{\min} x_{*}^{i}. $
 \end{center}
 
 Показатель $ x* $
 называется технологическим темпом роста. В магистральной теории доказано, что с таким темпом происходит максимально возможный рост производства продукции.
 Магистраль же строится по следующей формуле:
 \begin{center}
-	$ L*_{t} = x* L*_{t-1} $
+	$ L*_{t} = x* L*_{t-1}. $
 \end{center}
 
 Магистраль, которая проходит через точки $ L*_0 $ и $ L*_t $, как правило не проходит через точку фактического начала $ L_*(0) $ и желаемого конечного состояния экономики $ L_*(t) $.
@@ -376,9 +376,9 @@ $ x_*(t) = x_{*}^{1}, x_{*}^{2}, ... , x_{*}^{m} $ - множество оптимальных траек
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Применение методов EMPC}\label{2sec:useempc} % xxx заменить на свою метку
+\section{Применение методов EMPC}\label{2sec:useempc} 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-Существует 3 подхода в решении задач через EMPC
+Существует 3 подхода в решении задач через EMPC [3]
 
 \begin{enumerate}
   \item Базовый EMPC без дополнительных ограничений.
@@ -398,7 +398,7 @@ $$u(t)\in[0,b-\epsilon], t\in[\tau, \tau + T].$$
 $$ I_2(z,u)=\int_{\tau}^{\tau+T}e^{-\rho t}[\ln(1-u(t))+\ln(f(x(t)))]dt \to \max,$$
 $$\dot z(t)=u(t)f(z(t))-\mu x(t),$$
 $$x(\tau)=\frac{K(\tau)}{L(\tau)}, z(\tau + T)=z_1,$$
-$$u(t)\in[0,b-\epsilon], t\in[\tau, \tau + T],$$
+$$u(t)\in[0,b-\epsilon], t\in[\tau, \tau + T].$$
 Требование $z(\tau + T)=z_1,$ означает, что в момент $\tau+T$ $z$ должно равняться магистральному значению.
 
 Если дополнить критерий качества задачи специально подобранной линейной терминальной стоимостью то задача примет вид
@@ -410,11 +410,10 @@ $$u(t)\in[0,b-\epsilon], t\in[\tau, \tau + T].$$
 где $\alpha$ --- весовой коэффициент
 
 \chapter{Численные эксперименты}\label{chap3}
-\section{Применение}
 Продолжим рассматривать задачу
 
 \begin{equation}
-  \dot x(t)=u(t)f(x(t))-\mu x(t), u(t) \in U_{\epsilon}=[0,1-\epsilon]
+  \dot x(t)=u(t)f(x(t))-\mu x(t), u(t) \in U_{\epsilon}=[0,1-\epsilon],
 \end{equation}
 \begin{equation}
 x(0)=x_0
@@ -431,11 +430,11 @@ $N$ --- горизонт планирования, $h$ --- период дискретизации.
 
 $$J(x,u)=\sum_{0}^{T-1}\frac{\ln(1-u_i)+\ln(f(x_i))}{-\rho}(e^{-\rho(i+1)h}-e^{-\rho i h}),$$
 $$u_i(t)\in U=[0, 1-\epsilon], x(0)=x_0,$$
-$$x_{i+1}=u_i f(x_i)-\mu x_i.$$
+$$x_{i+1}=u_i f(x_i)-\mu x_i, i=0,1,\dots,N-1$$
 
 Задача оптимального управления в классе дискретных управлений свелась к задаче нелинейного программирования. В matlab существуют встроенные процедуры для решения таких задач.
 
-Для численного эксперимента примем $T=10$,$f(x)=x^{\alpha}$, $\alpha=0.3$, $\mu=0.03$, $\rho=0.05$, $\epsilon=0.01$.
+Для численного эксперимента примем $T=10$, $f(x)=x^{\alpha}$, $\alpha=0.3$, $\mu=0.03$, $\rho=0.05$, $\epsilon=0.01$.
 
 \paragraph{Код}
 
@@ -496,13 +495,13 @@ dx = u*x^(0.3) - 0.03*x;
 end
 \end{verbatim}
 
-Если задать длину горизонта прогнозирования равную 50 (переменная Horizon), то получим такие графики
+Если задать длину горизонта прогнозирования равную 50 (переменная Horizon), то получим такие графики:
 
 \includegraphics[scale=0.3]{untitled2}
 \includegraphics[scale=0.3]{untitled}
 
 \hspace{3cm} $u(t)$ \hspace{7cm} $x(t)$
 
-Получили, что $x$ сходится к значению $\approx6.4$
+Получили, что $x$ сходится к значению $\approx6.4.$
 \bigskip
 
